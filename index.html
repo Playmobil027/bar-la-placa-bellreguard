@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bar La Plaça · Bellreguard</title>
+<meta name="description" content="Bar La Plaça en Bellreguard, C. Major 34. Valoración 4,4 en Google con 183 reseñas. Horario, cómo llegar y teléfono.">
+<meta property="og:title" content="Bar La Plaça · Bellreguard">
+<meta property="og:description" content="Bar en la plaza de Bellreguard. Llamad o escribid por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --papel:#F4EEE4;
+  --tinta:#2B1E19;
+  --terracota:#B9633F;
+  --cielo:#5C9AC3;
+  --latón:#CFA652;
+  --linea:rgba(43,30,25,.22);
+  --sombra-texto:rgba(43,30,25,.72);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 1.0625rem/1.65 Literata,Georgia,serif;-webkit-font-smoothing:antialiased;padding-bottom:4.5rem}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{width:min(1100px,100% - 2rem);margin-inline:auto}
+.display{font-family:Syne,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;line-height:.9;margin:0}
+.kicker{font-family:Syne,sans-serif;font-weight:600;font-size:.95rem;margin:0 0 .75rem}
+.btn{display:inline-block;padding:.85rem 1.25rem;border:2px solid var(--tinta);font:600 1rem/1 Syne,sans-serif;text-decoration:none;background:transparent;color:var(--tinta);cursor:pointer}
+.btn--solido{background:var(--tinta);color:var(--papel)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--cielo);outline-offset:3px}
+.edit{background:rgba(207,166,82,.28);box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 .15em}
+.ver-editables .edit{outline:2px dashed var(--terracota);outline-offset:2px}
+
+/* Cabecera */
+.cabecera{position:sticky;top:0;z-index:20;background:var(--papel);border-bottom:1px solid var(--linea)}
+.cabecera .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:4.25rem}
+.marca{font:800 1.35rem/1 Syne,sans-serif;text-decoration:none;letter-spacing:-.02em}
+.marca span{color:var(--terracota)}
+.menu{display:none;gap:1.5rem;font:600 .95rem Syne,sans-serif}
+.menu a{text-decoration:none;padding-bottom:2px;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--terracota)}
+.cabecera .btn{padding:.6rem .9rem;font-size:.95rem}
+
+/* Hero */
+.hero{position:relative}
+.hero__foto{width:100%;height:min(74vh,640px);min-height:380px;object-fit:cover;clip-path:polygon(0 0,100% 0,100% 86%,62% 100%,0 92%)}
+.hero__caja{position:relative;margin-top:-7.5rem;background:var(--papel);padding:1.25rem 0 2.5rem;width:min(1100px,100% - 2rem);margin-inline:auto}
+.hero__titulo{font-size:clamp(4.2rem,21vw,11.5rem);color:var(--tinta)}
+.hero__titulo span{color:var(--terracota)}
+.hero__pie{display:grid;gap:1.5rem;margin-top:1.5rem}
+.hero__texto{max-width:34ch;font-size:1.15rem;margin:0}
+.hero__acciones{display:flex;flex-wrap:wrap;gap:.75rem}
+.plano{width:min(100%,380px);justify-self:end;color:var(--tinta)}
+
+/* Banda de valoración */
+.banda{background:var(--tinta);color:var(--papel);padding:2.5rem 0}
+.banda__grid{display:grid;gap:1.25rem;align-items:end}
+.banda__nota{font:800 clamp(5rem,16vw,9rem)/.8 Syne,sans-serif;letter-spacing:-.04em;color:var(--latón)}
+.banda p{margin:0}
+.banda__dato{font:800 2.6rem/1 Syne,sans-serif}
+
+/* Qué hay */
+.que{padding:4.5rem 0 3.5rem}
+.que__titulo{font-size:clamp(2.6rem,8vw,5.5rem)}
+.que__lista{list-style:none;padding:0;margin:2.5rem 0 0;display:grid;gap:0;border-top:2px solid var(--tinta)}
+.que__lista li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--linea);font-size:1.2rem}
+.que__lista small{font:600 .9rem Syne,sans-serif;color:var(--sombra-texto)}
+
+/* Carta */
+.carta{background:var(--cielo);padding:4rem 0;color:var(--tinta)}
+.carta__caja{margin-top:2rem;border:2px dashed var(--tinta);padding:2rem 1.5rem;background:var(--papel);max-width:520px}
+.carta__caja h3{font:800 1.8rem/1.05 Syne,sans-serif;margin:0 0 .75rem}
+.carta__caja p{margin:0}
+
+/* Pasos */
+.pasos{padding:4.5rem 0}
+.pasos ol{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:2rem}
+.pasos li{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+.pasos li::before{content:counter(paso);counter-increment:paso;font:800 3.2rem/.8 Syne,sans-serif;color:var(--terracota)}
+.pasos ol{counter-reset:paso}
+.pasos h3{font:800 1.4rem/1.1 Syne,sans-serif;margin:0 0 .35rem}
+.pasos p{margin:0}
+
+/* Reseñas */
+.resenas{padding:4rem 0;border-top:1px solid var(--linea)}
+.resenas__grid{display:grid;gap:2rem;align-items:center}
+.resenas__frase{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.2;margin:0;font-style:italic}
+
+/* Galería */
+.galeria{padding:1rem 0 4rem}
+.galeria__grid{display:grid;gap:1.25rem;grid-template-columns:1fr}
+.galeria figure{margin:0}
+.galeria img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:12px solid var(--papel);outline:2px solid var(--tinta)}
+.galeria figure:nth-child(2){margin-left:1.5rem}
+.galeria figure:nth-child(2) img{aspect-ratio:1/1}
+
+/* Visita */
+.visita{background:var(--tinta);color:var(--papel);padding:4.5rem 0}
+.visita__grid{display:grid;gap:3rem}
+.visita h2{font-size:clamp(2.6rem,8vw,5rem);margin:0 0 2rem}
+.horas{list-style:none;padding:0;margin:0}
+.horas li{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px solid rgba(244,238,228,.2)}
+.horas li.hoy{color:var(--latón);font-weight:600}
+.horas li.hoy strong::after{content:" · hoy";font-weight:400;font-size:.9em}
+.estado{font:800 1.5rem/1.15 Syne,sans-serif;margin:0 0 1.25rem}
+.visita .edit{color:var(--tinta)}
+.mapa{width:100%;height:320px;border:0;filter:grayscale(.3) contrast(1.05);margin-top:1.5rem}
+.visita__datos{margin:1.5rem 0 0;font-size:1.05rem}
+.visita__datos a{text-decoration-thickness:2px}
+.visita .btn{border-color:var(--papel);color:var(--papel)}
+.visita .btn--solido{background:var(--papel);color:var(--tinta)}
+
+/* Pie */
+.pie{padding:2.5rem 0 3rem;font-size:.95rem}
+.pie__grid{display:grid;gap:1rem}
+.pie p{margin:0}
+
+/* Franja para el dueño */
+.dueno{background:#ffffff;border-top:3px solid var(--terracota);padding:2.5rem 0 3rem;font-family:Syne,sans-serif}
+.dueno__aviso{font:600 .85rem Syne,sans-serif;color:var(--terracota);margin:0 0 1rem}
+.dueno h2{font:800 clamp(1.8rem,5vw,2.6rem)/1 Syne,sans-serif;margin:0 0 1.5rem}
+.dueno ol{list-style:none;padding:0;margin:0 0 1.75rem;display:grid;gap:1rem;counter-reset:arg}
+.dueno li{counter-increment:arg;display:grid;grid-template-columns:auto 1fr;gap:.75rem;font:400 1rem/1.5 Literata,serif}
+.dueno li::before{content:counter(arg) ".";font:800 1.1rem Syne,sans-serif;color:var(--terracota)}
+.dueno button{font:600 .95rem Syne,sans-serif;padding:.75rem 1rem;border:2px solid var(--tinta);background:transparent;cursor:pointer}
+
+/* Barra móvil */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1.6fr;background:var(--tinta)}
+.barra a{padding:1rem;text-align:center;font:700 1rem Syne,sans-serif;text-decoration:none;color:var(--papel)}
+.barra a + a{background:var(--terracota)}
+
+@media (min-width:760px){
+  .menu{display:flex}
+  .hero__pie{grid-template-columns:1fr auto;align-items:end}
+  .banda__grid{grid-template-columns:auto 1fr 1fr}
+  .resenas__grid{grid-template-columns:1fr 1fr}
+  .galeria__grid{grid-template-columns:1.3fr 1fr}
+  .visita__grid{grid-template-columns:1fr 1fr}
+  .pie__grid{grid-template-columns:1fr 1fr}
+  body{padding-bottom:0}
+  .barra{display:none}
+  .hero__caja{margin-top:-9rem}
+  .pasos ol{grid-template-columns:repeat(3,1fr);gap:2.5rem}
+  .pasos li{grid-template-columns:1fr}
+  .pasos li::before{font-size:4.5rem}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="wrap">
+    <a class="marca" href="#inicio">La <span>Plaça</span></a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#que">Qué hay</a>
+      <a href="#carta">Carta</a>
+      <a href="#resenas">Opiniones</a>
+      <a href="#visita">Horario y mapa</a>
+    </nav>
+    <a class="btn btn--solido" href="tel:+34660789685">Llamar</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-label="Presentación">
+    <img class="hero__foto" src="img/patio.jpg" alt="Plaza porticada con sombrillas y mesas en la terraza, a pleno día" width="1200" height="799">
+    <div class="hero__caja">
+      <p class="kicker">Bar en la plaça de Bellreguard</p>
+      <h1 class="display hero__titulo">La <span>Plaça</span></h1>
+      <div class="hero__pie">
+        <p class="hero__texto">Bar en el C. Major 34, en el centro de Bellreguard. Abrimos <span class="edit">por la mañana y por la noche</span>, con terraza.</p>
+        <div class="hero__acciones">
+          <a class="btn btn--solido" href="tel:+34660789685">Llamar al 660 78 96 85</a>
+          <a class="btn" href="https://wa.me/34660789685?text=Hola%2C%20quer%C3%ADa%20preguntar%20por%20el%20bar" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banda" aria-label="Valoración">
+    <div class="wrap banda__grid">
+      <p class="banda__nota" aria-label="4,4 sobre 5">4,4</p>
+      <p class="banda__dato">183 reseñas<br><span style="font:400 1.05rem Literata,serif">en Google Maps</span></p>
+      <p class="banda__dato" style="font-size:1.6rem;line-height:1.2">Bar La Plaça<br><span style="font:400 1.05rem Literata,serif">C. Major 34, Bellreguard</span></p>
+    </div>
+  </section>
+
+  <section class="que" id="que">
+    <div class="wrap">
+      <h2 class="display que__titulo">Lo que hay<br>en la plaça</h2>
+      <ul class="que__lista">
+        <li><span>Terraza al aire libre</span><small class="edit">por confirmar</small></li>
+        <li><span>Comida para llevar</span><small class="edit">por confirmar</small></li>
+        <li><span>Pago con tarjeta y móvil</span><small class="edit">por confirmar</small></li>
+        <li><span>Aparcamiento cerca</span><small class="edit">por confirmar</small></li>
+        <li><span>Ambiente tranquilo, también con niños</span><small class="edit">por confirmar</small></li>
+      </ul>
+      <figure class="plano" style="margin:3rem 0 0">
+        <svg viewBox="0 0 400 260" role="img" aria-label="Dibujo de la plaza con el bar marcado en la calle Major">
+          <rect x="20" y="20" width="360" height="220" fill="none" stroke="currentColor" stroke-width="2"/>
+          <rect x="60" y="60" width="150" height="120" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 4"/>
+          <path d="M20 200 L380 200" stroke="currentColor" stroke-width="10" opacity=".18"/>
+          <text x="24" y="196" font-family="Syne,sans-serif" font-size="13" font-weight="600" fill="currentColor">C. Major</text>
+          <circle cx="262" cy="200" r="9" fill="#B9633F"/>
+          <circle cx="262" cy="200" r="20" fill="none" stroke="#B9633F" stroke-width="2"/>
+          <text x="262" y="160" text-anchor="middle" font-family="Syne,sans-serif" font-size="17" font-weight="800" fill="currentColor">La Plaça</text>
+          <text x="262" y="180" text-anchor="middle" font-family="Literata,serif" font-size="12" fill="currentColor">C. Major, 34</text>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <section class="carta" id="carta">
+    <div class="wrap">
+      <h2 class="display que__titulo">La carta</h2>
+      <div class="carta__caja">
+        <h3 class="edit">Platos y precios, pendientes</h3>
+        <p class="edit">Aquí van los platos y precios que os dé el bar, con fotos cuando las tengáis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pasos" aria-label="Cómo contactar">
+    <div class="wrap">
+      <h2 class="display que__titulo">Cómo pedir<br>o venir</h2>
+      <ol>
+        <li><div><h3>Llamad</h3><p>Al <a href="tel:+34660789685">660 78 96 85</a> para reservar mesa o preguntar.</p></div></li>
+        <li><div><h3>Escribid</h3><p>Por <a href="https://wa.me/34660789685?text=Hola%2C%20quer%C3%ADa%20preguntar%20por%20el%20bar" target="_blank" rel="noopener">WhatsApp</a>, con lo que necesitéis y la hora que os viene bien.</p></div></li>
+        <li><div><h3>Venid</h3><p><span class="edit">Pasad por el C. Major 34 y os sentáis en la plaza.</span></p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="resenas" id="resenas" aria-label="Opiniones">
+    <div class="wrap resenas__grid">
+      <p class="resenas__frase">Con 4,4 de media y 183 opiniones, la gente que viene ya lo tiene claro.</p>
+      <div>
+        <p>Las opiniones están en Google. Si queréis leerlas antes de venir, están en la ficha del bar.</p>
+        <p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Bar+La+Pla%C3%A7a+C.+Major+34+Bellreguard" target="_blank" rel="noopener">Ver las opiniones en Google</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" aria-label="Fotos">
+    <div class="wrap galeria__grid">
+      <figure><img src="img/patio.jpg" alt="Plaza con soportales y mesas de terraza" loading="lazy" width="1200" height="799"></figure>
+      <figure><img src="img/barra.jpg" alt="Barra de madera con taburetes y botellas al fondo" loading="lazy" width="1200" height="800"></figure>
+    </div>
+  </section>
+
+  <section class="visita" id="visita">
+    <div class="wrap visita__grid">
+      <div>
+        <h2 class="display">Horario<br>y mapa</h2>
+        <p class="estado" id="estado" aria-live="polite">Comprobando horario…</p>
+        <ul class="horas edit" id="horas">
+          <li data-dia="mon"><span>Lunes</span><strong>07:00–15:30 · 19:00–23:00</strong></li>
+          <li data-dia="tue"><span>Martes</span><strong>07:00–15:30 · 19:00–23:00</strong></li>
+          <li data-dia="wed"><span>Miércoles</span><strong>07:00–15:30 · 19:00–23:00</strong></li>
+          <li data-dia="thu"><span>Jueves</span><strong>07:00–15:30 · 19:00–23:00</strong></li>
+          <li data-dia="fri"><span>Viernes</span><strong>07:00–15:30 · 19:00–23:00</strong></li>
+          <li data-dia="sat"><span>Sábado</span><strong>07:00–15:30 · 19:00–23:00</strong></li>
+          <li data-dia="sun"><span>Domingo</span><strong>07:00–15:30 · 19:00–23:00</strong></li>
+        </ul>
+      </div>
+      <div>
+        <iframe class="mapa" title="Mapa: Bar La Plaça, C. Major 34, Bellreguard" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Bar+La+Pla%C3%A7a+C.+Major+34+Bellreguard&amp;output=embed"></iframe>
+        <p class="visita__datos">C. Major, 34 · 46713 Bellreguard (Valencia)<br>
+          <a href="tel:+34660789685">660 78 96 85</a></p>
+        <p style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.75rem">
+          <a class="btn btn--solido" href="tel:+34660789685">Llamar</a>
+          <a class="btn" href="https://wa.me/34660789685?text=Hola%2C%20quer%C3%ADa%20preguntar%20por%20el%20bar" target="_blank" rel="noopener">WhatsApp</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="wrap pie__grid">
+    <p><strong class="display" style="font-size:1.4rem">La Plaça</strong><br>Bar · Bellreguard (Valencia)</p>
+    <p>C. Major, 34 · 46713 Bellreguard<br>660 78 96 85</p>
+  </div>
+</footer>
+
+<section class="dueno" aria-label="Notas para el dueño">
+  <div class="wrap">
+    <p class="dueno__aviso">Esta franja no aparece en la web publicada</p>
+    <h2>Por qué os conviene una web propia</h2>
+    <ol>
+      <li><span>Llamadas y mensajes directos, sin pasar por ninguna plataforma que cobre comisión.</span></li>
+      <li><span>Que os encuentren cuando buscan “bar en Bellreguard”, con vuestra dirección y horario reales.</span></li>
+      <li><span>Carta, horario y fotos fáciles de cambiar cuando queráis, sin depender de la ficha de Google.</span></li>
+      <li><span>Vuestros 4,4 y 183 reseñas presentados como merecen, con vuestras fotos y vuestro nombre.</span></li>
+    </ol>
+    <button type="button" id="resaltar">Resaltar datos a confirmar</button>
+  </div>
+</section>
+
+<nav class="barra" aria-label="Acciones rápidas">
+  <a href="tel:+34660789685">Llamar</a>
+  <a href="https://wa.me/34660789685?text=Hola%2C%20quer%C3%ADa%20preguntar%20por%20el%20bar" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  var DIAS=['mon','tue','wed','thu','fri','sat','sun'];
+  var TRAMOS=[[420,930],[1140,1380]];
+  function ahoraMadrid(){
+    var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Madrid',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var o={};p.forEach(function(x){o[x.type]=x.value});
+    var mapa={Mon:'mon',Tue:'tue',Wed:'wed',Thu:'thu',Fri:'fri',Sat:'sat',Sun:'sun'};
+    return {dia:mapa[o.weekday],min:(parseInt(o.hour,10)%24)*60+parseInt(o.minute,10)};
+  }
+  function hora(m){var h=Math.floor(m/60),mm=m%60;return (h<10?'0':'')+h+':'+(mm<10?'0':'')+mm;}
+  function estado(){
+    var t=ahoraMadrid();
+    var el=document.getElementById('estado');
+    var abierto=TRAMOS.filter(function(r){return t.min>=r[0]&&t.min<r[1];})[0];
+    if(abierto){el.textContent='Abierto ahora · cerramos a las '+hora(abierto[1]);return;}
+    var prox=TRAMOS.filter(function(r){return r[0]>t.min;})[0];
+    if(prox){el.textContent='Cerrado · abrimos hoy a las '+hora(prox[0]);return;}
+    el.textContent='Cerrado · abrimos mañana a las 07:00';
+  }
+  function hoy(){
+    var t=ahoraMadrid();
+    document.querySelectorAll('#horas li').forEach(function(li){
+      li.classList.toggle('hoy',li.getAttribute('data-dia')===t.dia);
+    });
+  }
+  estado();hoy();
+  setInterval(estado,60000);
+  var b=document.getElementById('resaltar');
+  b.addEventListener('click',function(){
+    var on=document.body.classList.toggle('ver-editables');
+    b.textContent=on?'Ocultar datos a confirmar':'Resaltar datos a confirmar';
+  });
+})();
+</script>
+</body>
+</html>
